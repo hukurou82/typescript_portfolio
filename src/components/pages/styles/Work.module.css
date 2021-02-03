@@ -1,0 +1,11 @@
+.a, a:visited{
+    text-decoration: none;
+    color : black;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.a:hover {
+    transform: translateY(-0.1875em);
+}
