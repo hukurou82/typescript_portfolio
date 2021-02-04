@@ -11,16 +11,16 @@ import {Grid} from '@material-ui/core'
 const Contact: React.FC = () => {
     return (
         <PersistentDrawer title="コンタクト">
-            <Container maxWidth="xs" style={{borderStyle:'groove',padding:'1em'}}>
+            <Container maxWidth="xs" style={{borderStyle:'groove',padding:'1em',paddingTop:'1em'}}>
                 <Grid
                     container
-                    spacing={1}
+                    spacing={5}
                     direction="row"
                     justify="space-around"
                     alignItems="center"
                 >
-                        <Grid item xs={12} md={6}>
-                                <a href='https://github.com/hukurou82' target="_blank">
+                        <Grid item xs={12} md={6} >
+                                <a href='https://github.com/hukurou82' target="_blank" >
                                     <GitHubIcon fontSize='large'/>
                                     github
                                 </a>
