@@ -10,12 +10,12 @@ import img5 from '../img/test5.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const createImg = (
-  id: number,
-  img: string,
-) => {
-  return {id,img}
-};
+// const createImg = (
+//   id: number,
+//   img: string,
+// ) => {
+//   return {id,img}
+// };
 
 // mapでの回し方。画像のインポート（読み込み）が不明でパス
 // const imgs =[
@@ -30,13 +30,11 @@ const TopSlider = () =>  {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay : true,
     };
     const style = {
         margin: "auto",
         height: 400,
-        color: "#fff",
-        background: "#3ab60b",
+
     };
     return (
       <Slider {...settings}>

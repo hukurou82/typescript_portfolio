@@ -6,6 +6,7 @@ import Card from '@material-ui/core/Card';
 import CodeIcon from '@material-ui/icons/Code';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 const createData = (
     name: string,
@@ -30,7 +31,7 @@ const Skil:React.FC = () => {
                 {rows.map((row) => (
                     <Grid item xs={12} md={3} component={Card} className={styles.html} key={row.name}>
                         <CardContent>
-                            <Typography color="textSecondary" variant="h5" gutterBottom>
+                            <Typography color="textSecondary" variant="inherit" gutterBottom>
                                 <CodeIcon />
                                 {row.name}
                             </Typography>

@@ -167,36 +167,36 @@ const PersistentDrawer:React.FC<PersistentDrawerProps> =({
         <List>
             <Link to="/" className={classes.link}>
               <ListItem button>
-                <ListItemIcon>
+                {/* <ListItemIcon>
                   <FaceIcon />
-                </ListItemIcon>
+                </ListItemIcon> */}
                 <ListItemText primary="プロフィール" />
               </ListItem>
             </Link>
 
             <Link to="/skil" className={classes.link}>
               <ListItem button>
-                <ListItemIcon>
+                {/* <ListItemIcon>
                   <DesktopMacIcon />
-                </ListItemIcon>
+                </ListItemIcon> */}
                 <ListItemText primary="スキル" />
               </ListItem>
             </Link>
 
             <Link to="/work" className={classes.link}>
               <ListItem button>
-                <ListItemIcon>
+                {/* <ListItemIcon>
                   <BuildIcon />
-                </ListItemIcon>
+                </ListItemIcon> */}
                 <ListItemText primary="ワーク" />
               </ListItem>
             </Link>
 
             <Link to="/contact" className={classes.link}>
               <ListItem button>
-                <ListItemIcon>
+                {/* <ListItemIcon>
                   <ContactMailIcon />
-                </ListItemIcon>
+                </ListItemIcon> */}
                 <ListItemText primary="コンタクト" />
               </ListItem>
             </Link>

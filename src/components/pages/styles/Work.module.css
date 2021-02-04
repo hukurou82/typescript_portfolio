@@ -9,3 +9,33 @@
 .a:hover {
     transform: translateY(-0.1875em);
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+.html {
+    border-radius: 0% !important;
+    margin: 2% 2% !important;
+    border-left: 5px solid #3cb371;
+    border-radius: 0% !important;
+    margin: 2% 2% !important;
+    background-color: #f3f1f1 !important;
+}
+
+.recovered {
+    border-left: 5px solid #3cb371;
+    border-radius: 0% !important;
+    margin: 2% 2% !important;
+    background-color: #c1f6c1 !important;
+  }
+  
+
+  @media only screen and (max-width:599px) {
+    .htmlb {
+        font-size: 1em;
+    }
+  }

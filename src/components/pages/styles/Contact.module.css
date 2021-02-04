@@ -1,10 +1,10 @@
-.box {
+/* .box {
     border: 1px solid #000000;
     margin: auto;
-    width: 700px;
+    width: 100%;
     margin-top: 50px;
-}
-
+} */
+/*
 .github_box {
     margin: 3em;
     text-align: center;
@@ -33,15 +33,15 @@
 .mail_text {
     display: inline-block;
     font-size: 2em;
-}
+} */
 
-@media only screen and (max-width:800px) {
+/* @media only screen and (max-width:800px) {
     .box {
         border: 1px solid #000000;
         width: 600px;
     }
-}
-
+} */
+/* 
 @media only screen and (max-width:599px) {
     .box {
         border: 1px solid #000000;
@@ -65,4 +65,4 @@
         font-size: 1em;
         color: black;
     }
-}
+} */

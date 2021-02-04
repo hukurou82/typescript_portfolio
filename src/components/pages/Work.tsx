@@ -8,30 +8,16 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import BuildIcon from '@material-ui/icons/Build';
+import {Grid} from '@material-ui/core'
+import Card from '@material-ui/core/Card';
+import CodeIcon from '@material-ui/icons/Code';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
 
 import styles from './styles/Work.module.css';
 
-const StyledTableCell = withStyles((theme: Theme) =>
-  createStyles({
-    head: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
-    },
-    body: {
-      fontSize: 14,
-    },
-  }),
-)(TableCell);
 
-const StyledTableRow = withStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover,
-      },
-    },
-  }),
-)(TableRow);
 
 const createData = (
     name: string, 
@@ -51,46 +37,26 @@ const rows = [
   createData('映画ランキングサイト','HTML、CSS、jQuery', 'Bootstrap','映画ランキングサイト',"http://hukurou82.html.xdomain.jp/test3/index.html"),
 ];
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 700,
-  },
-});
-
 
 
 const Work: React.FC = () => {
-
-    const classes = useStyles();
-
-
     return (
         <PersistentDrawer title="ワーク">
-            <p>作ってきたサイトです。ポートフォリオ名をクリックしてください。</p>
-            <TableContainer component={Paper}>
-                <Table className={classes.table} aria-label="customized table">
-                    <TableHead>
-                        <TableRow>
-                            <StyledTableCell>ポートフォリオ</StyledTableCell>
-                            <StyledTableCell>スキル</StyledTableCell>
-                            <StyledTableCell>フレームワーク</StyledTableCell>
-                            <StyledTableCell>説明</StyledTableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {rows.map((row) => (
-                            <StyledTableRow key={row.name}>
-                                <StyledTableCell component="th" scope="row">
-                                    <a href={row.url} target="_blank" className={styles.a} >{row.name}</a>
-                                </StyledTableCell>
-                                <StyledTableCell>{row.skil}</StyledTableCell>
-                                <StyledTableCell>{row.fw}</StyledTableCell>
-                                <StyledTableCell>{row.description}</StyledTableCell>
-                            </StyledTableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+            <Grid container spacing={1} justify="center">
+                {rows.map((row) => (
+                    <Grid item xs={12} md={3} component={Card} className={styles.html} key={row.name}>
+                        <CardContent>
+                            <Typography color="textSecondary" variant="h5" gutterBottom>
+                                <BuildIcon />
+                                <a href={row.url} target="_blank" className={styles.a} >{row.name}</a>
+                            </Typography>
+                            <Typography variant="h6">
+                                {row.description}
+                            </Typography>
+                        </CardContent>
+                    </Grid>
+                ))}
+            </Grid>
         </PersistentDrawer>
     )
 }

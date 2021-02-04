@@ -4,30 +4,35 @@ import styles from './styles/Contact.module.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import {Grid} from '@material-ui/core'
 
 const Contact: React.FC = () => {
     return (
         <PersistentDrawer title="コンタクト">
-            <div className={styles.box}>
-                <div className={styles.github_box}>
-                    <a href='https://github.com/hukurou82' target="_blank">
-                        <GitHubIcon fontSize='large'/>
-                        <div className={styles.github_text}>:Github</div>
-                    </a>
-                </div>
-
-                <div className={styles.instagram_box}>
-                    <a href = 'https://www.instagram.com/hukurou82/?hl=ja' target="_blank">
-                        <InstagramIcon fontSize='large'/>
-                        <div className={styles.instagram_text}>:Instagram</div>
-                    </a>
-                </div>
-
-                <div className={styles.mail_box}>
-                    <EmailIcon fontSize='large'/>
-                    <div className={styles.mail_text}>:Sanple_M.J@Sanple.com</div>
-                </div>
-            </div>
+            <Container maxWidth="xs" style={{borderStyle:'groove',padding:'1em'}}>
+                <Grid
+                    container
+                    spacing={1}
+                    direction="row"
+                    justify="space-around"
+                    alignItems="center"
+                >
+                        <Grid item xs={12} md={6}>
+                                <a href='https://github.com/hukurou82' target="_blank">
+                                    <GitHubIcon fontSize='large'/>
+                                    github
+                                </a>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                                <a href='https://www.instagram.com/hukurou82/?hl=ja' target="_blank">
+                                    <InstagramIcon fontSize='large'/>
+                                    Instagram
+                                </a>
+                        </Grid>
+                </Grid>
+            </Container>
         </PersistentDrawer>
     )
 }
