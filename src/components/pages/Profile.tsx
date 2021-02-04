@@ -16,6 +16,7 @@ const Profile:React.FC = () => {
                     <Typography variant = "h5" component="div" >
                             <h2 className={styles.h2}>元精密機器設計エンジニア出身のフロントエンジニアです。</h2>
                             <p>主にTypescriptやJavascriptで開発をしています。<br />
+                            2000年に初めてHTMLとCSSで個人ホームページを作りましたが、そのあと設計エンジニアになりました。<br />
                             新しい技術や気になる事があればどんどん突っ込んでいき体験したいという考えです。<br />
                             より良い暮らしの為様々なサービスを作り出していけたらいいなと考えています。
                             </p>
