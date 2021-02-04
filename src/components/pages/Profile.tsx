@@ -14,7 +14,7 @@ const Profile:React.FC = () => {
             <Container maxWidth="sm">
                 <Grid container spacing={1} justify="center">
                     <Typography variant = "h5" component="div" >
-                            <h2 className={styles.h2}>元精密機器設計エンジニアのアクティブなフロントエンジニアです。</h2>
+                            <h2 className={styles.h2}>元精密機器設計エンジニア出身のフロントエンジニアです。</h2>
                             <p>主にTypescriptやJavascriptで開発をしています。<br />
                             新しい技術や気になる事があればどんどん突っ込んでいき体験したいという考えです。<br />
                             より良い暮らしの為様々なサービスを作り出していけたらいいなと考えています。
