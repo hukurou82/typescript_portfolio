@@ -1,6 +1,6 @@
 import React from 'react'
+import PersistentDrawer from '../../templates/PersistentDrawer'
 import styles from './styles/Skil.module.css';
-import GenericTemplate  from '../templates/GenericTemplate';
 import {Grid} from '@material-ui/core'
 import Card from '@material-ui/core/Card';
 import CodeIcon from '@material-ui/icons/Code';
@@ -22,28 +22,26 @@ const rows = [
     createData("PHP","スクラッチ開発でCRUDを作成。またログイン機能なども実装。フレームワークではLaravelを使用"),
 ];
 
-const Skil: React.FC = () => {
-    
 
-
+const Skil:React.FC = () => {
     return (
-        <GenericTemplate title="スキル">
+        <PersistentDrawer title="スキル">
             <Grid container spacing={1} justify="center">
                 {rows.map((row) => (
                     <Grid item xs={12} md={3} component={Card} className={styles.html} key={row.name}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom >
+                            <Typography color="textSecondary" variant="h5" gutterBottom>
                                 <CodeIcon />
                                 {row.name}
                             </Typography>
-                            <Typography variant="h5">
+                            <Typography variant="h6">
                                 {row.description}
                             </Typography>
                         </CardContent>
                     </Grid>
                 ))}
             </Grid>
-        </GenericTemplate>
+        </PersistentDrawer>
     )
 }
 

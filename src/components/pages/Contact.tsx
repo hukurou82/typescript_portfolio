@@ -1,5 +1,5 @@
 import React from 'react'
-import GenericTemplate  from '../templates/GenericTemplate';
+import PersistentDrawer from '../../templates/PersistentDrawer'
 import styles from './styles/Contact.module.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -7,7 +7,7 @@ import EmailIcon from '@material-ui/icons/Email';
 
 const Contact: React.FC = () => {
     return (
-        <GenericTemplate title="コンタクト">
+        <PersistentDrawer title="コンタクト">
             <div className={styles.box}>
                 <div className={styles.github_box}>
                     <a href='https://github.com/hukurou82' target="_blank">
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                     <div className={styles.mail_text}>:Sanple_M.J@Sanple.com</div>
                 </div>
             </div>
-        </GenericTemplate>
+        </PersistentDrawer>
     )
 }
 

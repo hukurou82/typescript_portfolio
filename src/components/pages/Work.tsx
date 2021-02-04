@@ -1,5 +1,5 @@
 import React from 'react'
-import GenericTemplate  from '../templates/GenericTemplate';
+import PersistentDrawer from '../../templates/PersistentDrawer'
 import { withStyles, Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -44,7 +44,7 @@ const createData = (
 }
 
 const rows = [
-  createData('ポートフォリオ','Typescript', 'React、Material-UI','現在見ているポートフォリオ', './Profile'),
+  createData('ポートフォリオ','Typescript', 'React、Material-UI','現在見ているポートフォリオ', './'),
   createData('TODOリスト','Javascript', 'React、Bootstrap','Reactを使ったCURD',"https://hukurou82.github.io/todo/"),
   createData('チャットbot','Javascript、Firebase、Slack', 'React、Redux、Material-UI','自動でチャットのやり取りをし、細かいやり取りは直接連絡を取れるチャットbot', "https://chatbot-21dbb.web.app/"),
   createData('新型コロナウイルスの感染者数チャート','Typescript、Firebase', 'React、Redux、Chrat.js','新型コロナウイルスの感染者数が分かるチャートをChart.jsを使い実装',"https://covid19-app-bbc7f.web.app/"),
@@ -65,7 +65,7 @@ const Work: React.FC = () => {
 
 
     return (
-        <GenericTemplate title="ワーク">
+        <PersistentDrawer title="ワーク">
             <p>作ってきたサイトです。ポートフォリオ名をクリックしてください。</p>
             <TableContainer component={Paper}>
                 <Table className={classes.table} aria-label="customized table">
@@ -91,7 +91,7 @@ const Work: React.FC = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-        </GenericTemplate>
+        </PersistentDrawer>
     )
 }
 

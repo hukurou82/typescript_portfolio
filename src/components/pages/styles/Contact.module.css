@@ -45,21 +45,24 @@
 @media only screen and (max-width:599px) {
     .box {
         border: 1px solid #000000;
-        width: 350px;
+        width: 300px;
     }
 
     .github_text {
         display: inline-block;
         font-size: 1em;
+        color: black;
     }
 
     .instagram_text {
         display: inline-block;
         font-size: 1em;
+        color: black;
     }
     
     .mail_text {
         display: inline-block;
         font-size: 1em;
+        color: black;
     }
 }
