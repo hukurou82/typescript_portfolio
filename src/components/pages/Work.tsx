@@ -42,13 +42,16 @@ const rows = [
 const Work: React.FC = () => {
     return (
         <PersistentDrawer title="ワーク">
+          <p>作ってきたサイトです。ポートフォリオ名をクリックしてください。</p>
             <Grid container spacing={1} justify="center">
                 {rows.map((row) => (
                     <Grid item xs={12} md={3} component={Card} className={styles.html} key={row.name}>
                         <CardContent>
                             <Typography color="textSecondary" variant="h5" gutterBottom>
-                                <BuildIcon />
-                                <a href={row.url} target="_blank" className={styles.a} >{row.name}</a>
+                            <a href={row.url} target="_blank" className={styles.a} >
+                              <BuildIcon />
+                                {row.name}
+                            </a>
                             </Typography>
                             <Typography variant="h6">
                                 {row.description}
