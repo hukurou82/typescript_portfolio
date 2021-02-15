@@ -1,0 +1,7 @@
+環境構築
+
+npx create-react-app . --template typescript --use-npm　reactのnpx、redux-typescriptはredux toolKitのインストール、--use-npmはnpmでcreate-react-appするという意味
+
+npm install @material-ui/core　マテリアルUIのインストール
+npm install @material-ui/icons
+
