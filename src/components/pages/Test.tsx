@@ -4,6 +4,7 @@ const Test = () => {
   return (
     <div>
       <p>プルリクエスト</p>
+      <p>github flow</p>
     </div>
   );
 };
