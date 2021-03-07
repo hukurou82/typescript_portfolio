@@ -69,6 +69,13 @@ const rows = [
     "https://typescript-todo-10fba.web.app/login"
   ),
   createData(
+    "AWSで構築するWordpress",
+    "言語:Linux",
+    "",
+    "EC2でサーバーを構築、ドメインを購入しIPアドレスと紐づけプライベートサブネットを作りRDSを設置してWordpressをインストール",
+    "http://hukurou-aws.work/"
+  ),
+  createData(
     "映画ランキングサイト",
     "言語:HTML、CSS、jQuery",
     "FW:Bootstrap",
