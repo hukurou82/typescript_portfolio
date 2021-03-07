@@ -24,6 +24,10 @@ const rows = [
     "インフラ系も学習しEC2でWebサーバーを構築しWordpressをインストール"
   ),
   createData(
+    "Docker",
+    "学習中ではあるが自分で作ったイメージをDocker Hubにpushすることが出来た。今後も知識を深めていく。"
+  ),
+  createData(
     "Java",
     "ログイン機能や小規模な掲示板を開発。フレームワークはSpringBootを使用"
   ),
