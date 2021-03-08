@@ -20,6 +20,10 @@ const rows = [
     "型宣言することにより、読みやすいコードがかけるのではないかと実装。React、Chart.jsと共にグラフの作成"
   ),
   createData(
+    "Firebase",
+    "インフラにGoogleのFirebaseを使いDBにデータを保存。そこから参照したり更新したりすることに使用。"
+  ),
+  createData(
     "AWS",
     "インフラ系も学習しEC2でWebサーバーを構築しWordpressをインストール"
   ),
