@@ -62,6 +62,13 @@ const rows = [
     "https://covid19-app-bbc7f.web.app/"
   ),
   createData(
+    "リアルタイムチャットアプリ",
+    "言語:Javascript、Firebase",
+    "FW:React、Material-UI",
+    "FirebaseのDBを使ったチャットアプリ",
+    "https://new-chat-app-d9f76.web.app/"
+  ),
+  createData(
     "TypescriptとRedux toolkitで作るTODO",
     "言語:Typescript、Firebase",
     "FW:React、Redux toolkit、Material-UI",
