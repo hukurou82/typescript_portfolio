@@ -80,7 +80,7 @@ const rows = [
     "言語:Linux",
     "",
     "EC2でサーバーを構築、ドメインを購入しIPアドレスと紐づけプライベートサブネットを作りRDSを設置してWordpressをインストール",
-    "http://hukurou-aws.work/"
+    "http://aws-hukurou.work/"
   ),
   createData(
     "映画ランキングサイト",
