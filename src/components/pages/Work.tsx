@@ -1,22 +1,22 @@
 import React from "react";
 import PersistentDrawer from "../../templates/PersistentDrawer";
-import {
-  withStyles,
-  Theme,
-  createStyles,
-  makeStyles,
-} from "@material-ui/core/styles";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
+// import {
+//   withStyles,
+//   Theme,
+//   createStyles,
+//   makeStyles,
+// } from "@material-ui/core/styles";
+//import Table from "@material-ui/core/Table";
+// import TableBody from "@material-ui/core/TableBody";
+// import TableCell from "@material-ui/core/TableCell";
+// import TableContainer from "@material-ui/core/TableContainer";
+// import TableHead from "@material-ui/core/TableHead";
+// import TableRow from "@material-ui/core/TableRow";
+// import Paper from "@material-ui/core/Paper";
 import BuildIcon from "@material-ui/icons/Build";
 import { Grid } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
-import CodeIcon from "@material-ui/icons/Code";
+// import CodeIcon from "@material-ui/icons/Code";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
@@ -75,13 +75,13 @@ const rows = [
     "DB付きtodoリスト",
     "https://typescript-todo-10fba.web.app/login"
   ),
-  createData(
-    "AWSで構築するWordpress",
-    "言語:Linux",
-    "",
-    "EC2でサーバーを構築、ドメインを購入しIPアドレスと紐づけプライベートサブネットを作りRDSを設置してWordpressをインストール",
-    "http://aws-hukurou.work/"
-  ),
+  // createData(
+  //   "AWSで構築するWordpress",
+  //   "言語:Linux",
+  //   "",
+  //   "EC2でサーバーを構築、ドメインを購入しIPアドレスと紐づけプライベートサブネットを作りRDSを設置してWordpressをインストール",
+  //   "http://aws-hukurou.work/"
+  // ),
   createData(
     "映画ランキングサイト",
     "言語:HTML、CSS、jQuery",
@@ -107,7 +107,12 @@ const Work: React.FC = () => {
           >
             <CardContent>
               <Typography color="textSecondary" variant="h5" gutterBottom>
-                <a href={row.url} target="_blank" className={styles.a}>
+                <a
+                  href={row.url}
+                  target="_blank"
+                  className={styles.a}
+                  rel="noreferrer"
+                >
                   <BuildIcon />
                   {row.name}
                 </a>
